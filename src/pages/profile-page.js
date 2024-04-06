@@ -6,7 +6,7 @@ import { PageLayout } from "../components/page-layout";
 export const ProfilePage = () => {
   const { user } = useAuth0();
 
-  console.log(user);
+  console.log(user.sub);
 
   if (!user) {
     return null;
